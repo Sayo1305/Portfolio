@@ -1,0 +1,148 @@
+.ProjectConatiner{
+      width: 75%;
+      margin-bottom: 10%;
+      margin: 0 auto;
+      height: auto;
+}
+
+.ProjectListCont{
+      padding: 10px;
+      color: rgb(175, 175, 175);
+      gap: 10px;
+      display: flex;
+      margin-top: 5%;
+}
+.ProjectListCont:nth-child(3)
+{
+      flex-direction: row-reverse;
+}
+
+.ProjectImageContainer{
+      width: 50%;
+      height: 40vh;
+      object-fit: contain;
+}
+
+.ProjectDescCont{  
+    width: 50%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.ProjectDescHead{
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: rgb(175, 175, 175);
+}
+.ProjectDescPara{
+      text-align: justify;
+      background: #101e35;
+      border: solid 1px #000;
+      border-radius: 5px;
+      padding: 20px;
+      box-shadow: 0 10px 30px -15px #000;
+}
+.ProjectImage{
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      box-shadow: 0 10px 30px -15px #000;
+      object-fit: cover;
+}
+.ProjectStackCont{
+      display: flex;
+      padding: 10px;
+      gap: 10px;
+      flex-wrap: wrap;
+      color: rgb(175, 175, 175);
+      width: 100%;
+      font-family: "Source Code Pro", monospace;
+      color: #00FF7F;
+      justify-content: space-evenly;
+      font-weight: 600;
+}
+
+.OtherProjectHead{
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: rgb(175, 175, 175);
+}
+
+.OtherProjectCont{
+      padding: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: center;
+      justify-content: space-evenly;
+}
+
+.ProjectCard{
+      height: 350px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px -15px #000;
+      border: 1px solid #000;
+      background: #101e35;
+}
+.ProjectSymbol{
+      display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+.ProjectCardHead{
+      font-size: 1.1rem;
+      color: rgb(175, 175, 175);
+      font-weight: 700;
+      padding: 10px;
+}
+
+.ProjectCardDesc{
+      text-align: justify;
+      padding: 10px;
+      color: rgb(175, 175, 175);
+  }
+
+
+  /* for intersection observer  */
+  .project_card1 , .project_card3 {
+      opacity: 0;
+      transform: translateX(-2vw);
+      overflow: hidden;
+      transition : transform 1s ease,opacity 1s ease ;
+  }
+  .project_card1.show , .project_card3.show{
+      opacity: 1;
+      transform: translateX(  0);
+      transition: transform 1s ease,opacity 1s ease;
+  }
+  .project_card2 , .project_card4{
+      opacity: 0;
+      transform: translateX(2vw);
+      overflow: hidden;
+      transition : transform 1s ease,opacity 1s ease ;
+  }
+  .project_card2.show , .project_card4.show{
+      opacity: 1;
+      transform: translateX(0);
+      transition: transform 1s ease,opacity 1s ease;
+  }
+
+  @media screen  and (max-width: 750px){
+      .ProjectListCont{
+            flex-direction: column;
+            align-items: center;
+      }
+      .ProjectImageContainer , .ProjectDescCont {
+            width: 80%;
+      }
+      .ProjectDescHead {
+            text-align: center;
+      }
+      .ProjectListCont:nth-child(3) {
+            flex-direction: column;
+      }
+  }

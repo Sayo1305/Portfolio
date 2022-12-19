@@ -1,0 +1,39 @@
+.CetiCont{
+      width: 75%;
+      margin: 0 auto;
+      height: auto;
+      margin-bottom: 10%;
+}
+
+.CertHead{
+      display: flex;
+      color: rgb(175, 175, 175);
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif !important;
+      font-weight: 800;
+      align-items: center;
+      gap: 5px;
+}
+.CertiLine{
+      padding: 10px;
+}
+
+.CertiheadPoint{
+      color: rgb(175, 175, 175);
+      font-size: 1.2rem;
+      font-weight: 600;
+}
+
+.CertiPoint{
+      position: relative;
+      color: rgb(175, 175, 175);
+      padding: 10px;
+      display: flex;
+      right: -20px;
+      flex-direction: column;
+      gap: 10px;
+}
+
+.CertiPointDesc{
+      text-align: justify;
+}

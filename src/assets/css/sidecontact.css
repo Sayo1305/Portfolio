@@ -1,0 +1,43 @@
+.SideContactcont{
+      position: fixed;
+      display: flex;
+      bottom: -1%;
+      left: 2%;
+      gap: 20px;
+      padding: 10px;
+      color: rgb(191, 190, 190) !important;
+      flex-direction: column;
+      align-items: center;
+}
+a{
+      color: #00FF7F !important;
+}
+
+
+.tilttext{
+      transform: rotate(-90deg);
+      color: #00FF7F;
+      margin-bottom: 50px;
+}
+.SideContactIcon:hover{
+      transform: scale(1.3);
+}
+
+
+.SlideEmail{
+      position: fixed;
+      display: flex;
+      bottom: -1%;
+      right: 2%;
+      gap: 20px;
+      padding: 10px;
+      color: rgb(191, 190, 190) !important;
+      flex-direction: column;
+      align-items: center;
+}
+
+@media screen  and  (max-width: 750px){
+      .SlideEmail{
+            display: none;
+      }
+}

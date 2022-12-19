@@ -1,0 +1,85 @@
+.HeroSection{
+      width: 75%;
+      display: flex;
+      margin: 0 auto;
+      height: 100vh;
+      flex-direction: column;
+      justify-content: center;
+}
+
+.HeroText1{
+      font-size: 1rem;
+      color: #00FF7F;
+      font-family: "Fira Mono", monospace;
+}
+.HeroMainText{
+      font-size: 6rem;
+
+      font-weight: 700;
+      color: rgb(198, 198, 198);
+}
+.HeroSpecialText{
+      display: flex;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 1.5rem;
+      color: #00FF7F;
+      font-family: "Fira Mono", monospace;
+}
+.HeroText1 , .HeroSpecialText , .HeroButton{
+      opacity: 0;
+      transform: translateY(40px);
+      transition : transform 2s ease,opacity 2s ease ;
+}
+.HeroText1.appear1 , .HeroSpecialText.appear1 , .HeroButton.appear1{
+      opacity: 1;
+      transform: translateY(0);
+      transition : transform 2s ease,opacity 2s ease ;
+}
+.HeroMainText , .HeroPara  {
+      opacity: 0;
+      transform: translateY(-40px);
+      transition : transform 1s ease,opacity 1s ease ;
+}
+.HeroMainText.appear1 , .HeroPara.appear1{
+      opacity: 1;
+      transform: translateY(0);
+      transition : transform 1s ease,opacity 1s ease ;
+}
+
+
+.HeroPara{
+      text-align: justify;
+      width: 60%;
+      font-size: 1.2rem;
+      color: rgb(200, 200, 200);
+}
+.HeroButton{
+      background: transparent;
+      padding: 10px;
+      border-radius: 10px;
+      border: solid #fff 1px;
+      font-size: 1.1rem;
+      color: #00FF7F;
+      margin: 10px 0px;
+      cursor: pointer;
+}
+.HeroButton:hover{
+      background: #1eff001d;
+}
+
+@media screen and (max-width:750px) {
+      .HeroSection{
+            width: 100%;
+      }
+      .HeroSection{
+            align-items: center;
+      }
+      .HeroMainText{
+            font-size: 4rem;
+      }
+      .HeroPara{
+            font-size: 1rem;
+            padding: 5px;
+      }
+}

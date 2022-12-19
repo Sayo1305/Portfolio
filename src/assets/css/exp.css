@@ -1,0 +1,59 @@
+.ExpContainer {
+  width: 75%;
+  margin: 0 auto;
+  height: auto;
+  margin-top: 10%;
+  color: rgb(175, 175, 175);
+}
+
+.ExpHead {
+  display: flex;
+  font-size: 1.5rem;
+  font-family: "Poppins", sans-serif !important;
+  font-weight: 800;
+  align-items: center;
+  gap: 5px;
+}
+.Expshowcase {
+  padding: 10px;
+}
+
+.ExpShow {
+  display: flex;
+  flex-direction: column;
+}
+.ExpHeader1 {
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ExpHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ExpDate{
+      font-weight: 700;
+      color: #00FF7F;
+}
+
+.ExpPoint{
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      padding: 5px;
+}
+.ExpDetail{
+      padding: 10px;
+}
+
+@media screen  and  (max-width: 750px){
+  .ExpHeader, .ExpHeader1{
+    flex-direction: column;
+  }
+
+}

@@ -1,0 +1,40 @@
+.SkillContainer{
+      width: 75%;
+      margin: 0 auto;
+      height: auto;
+      margin-top: 10%;
+      margin-bottom: 10%;
+  }
+
+.SkillHead{
+      display: flex;
+      color: rgb(175, 175, 175);
+      font-size: 1.5rem;
+      font-family: "Poppins", sans-serif !important;
+      font-weight: 800;
+      align-items: center;
+      gap: 5px;
+}
+
+.SkillShow{
+      display: flex;
+      gap: 20px;
+      color: rgb(175, 175, 175);
+      flex-direction: column;
+}
+
+.SkillPart{
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 25px;
+      justify-content: space-evenly;
+}
+.SkillShowhead{
+    font-size: 1.2rem;
+}
+.Skill{
+      display: flex;
+    align-items: center;
+    gap: 5px;
+}
