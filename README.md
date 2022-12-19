@@ -1,3 +1,6 @@
+# Inspired by 
+<a href = "https://brittanychiang.com/" target = "_blank">brittanychiang.com</a>
+### do checkout their site
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
