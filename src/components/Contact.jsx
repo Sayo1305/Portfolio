@@ -30,8 +30,17 @@ const Contact = ({contactref}) => {
     timerProgressBar: true,
   });
   const submit_detail = async(e)=>{
-    Setclicked(true);
     e.preventDefault();
+    Setclicked(true);
+    if(Name === "" || Email === "" || Topic === "" || Mess === "")
+    {
+      Toast.fire({
+        icon: 'error',
+        title: "Fill the form Completely",
+      })
+      Setclicked(false);
+      return;
+    }
     emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, myform.current, process.env.REACT_APP_PUBLICKEY)
       .then((result) => {
           console.log(result.text);
