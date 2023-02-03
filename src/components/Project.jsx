@@ -32,14 +32,51 @@ const Project = ({projref}) => {
         <div className="StraightLine"></div>
       </div>
       <div className="ProjectListCont">
-        <div className="ProjectImageContainer project_card1" ref={myproj2}>
+        <div className="ProjectImageContainer project_card4" ref={myproj2}>
+          <img
+            className="ProjectImage"
+            src="https://user-images.githubusercontent.com/84987518/216675846-bf58ae46-7a40-45dc-8039-213f0b97cc45.png"
+            alt=""
+          />
+        </div>
+        <div className="ProjectDescCont project_card1" ref={myproj}>
+          <div className="ProjectDescHead">CSV file Uploader</div>
+          <div className="ProjectDescPara">
+            A MERN stack APP in which we can login and signup using JWT token and add our
+            CSV file and convert it into JSON format and save in the MONGODB data base.
+          </div>
+          <div className="ProjectStackCont">
+            <div>ReactJs</div>
+            <div>MongoDB</div>
+            <div>ExpressJs</div>
+            <div>NodeJs</div>
+            <div>JWT</div>
+          </div>
+          <div className="ProjectStackCont">
+          <a href="https://github.com/Sayo1305/Todo_MERN_App" target={"_blank"} rel="noreferrer">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="rgb(175, 175, 175)"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="ProjectListCont">
+        <div className="ProjectImageContainer project_card1" ref={myproj3}>
           <img
             className="ProjectImage"
             src="https://user-images.githubusercontent.com/84987518/172128198-fea381d6-2dd3-4de3-9b68-3a88c767e960.png"
             alt=""
           />
         </div>
-        <div className="ProjectDescCont project_card2" ref={myproj}>
+        <div className="ProjectDescCont project_card2" ref={myproj4}>
           <div className="ProjectDescHead">
             Crypto Currency Chrome Extension
           </div>
@@ -70,44 +107,7 @@ const Project = ({projref}) => {
           </div>
         </div>
       </div>
-      <div className="ProjectListCont">
-        <div className="ProjectImageContainer project_card4" ref={myproj3}>
-          <img
-            className="ProjectImage"
-            src="https://user-images.githubusercontent.com/84987518/194935806-c76c8b93-d24a-42ac-b365-a8a72a3169c2.png"
-            alt=""
-          />
-        </div>
-        <div className="ProjectDescCont project_card1" ref={myproj4}>
-          <div className="ProjectDescHead">TODO MERN APP</div>
-          <div className="ProjectDescPara">
-            A react App which create List item and with help of react hooks like
-            "use state" and "Use effect" and store the data in MONGODB and use
-            express and node to get the data as api we can able to edit and also
-            delete the task when completed.
-          </div>
-          <div className="ProjectStackCont">
-            <div>ReactJs</div>
-            <div>MongoDB</div>
-            <div>ExpressJs</div>
-            <div>NodeJs</div>
-          </div>
-          <div className="ProjectStackCont">
-          <a href="https://github.com/Sayo1305/Todo_MERN_App" target={"_blank"} rel="noreferrer">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
-              fill="rgb(175, 175, 175)"
-              class="bi bi-github"
-              viewBox="0 0 16 16"
-            >
-              <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
-            </svg>
-            </a>
-          </div>
-        </div>
-      </div>
+      
       <div className="ProjectListCont">
         <div className="ProjectImageContainer project_card1" ref={myproj5}>
           <img
@@ -175,7 +175,7 @@ const Project = ({projref}) => {
               <path d="M.54 3.87.5 3a2 2 0 0 1 2-2h3.672a2 2 0 0 1 1.414.586l.828.828A2 2 0 0 0 9.828 3h3.982a2 2 0 0 1 1.992 2.181l-.637 7A2 2 0 0 1 13.174 14H2.826a2 2 0 0 1-1.991-1.819l-.637-7a1.99 1.99 0 0 1 .342-1.31zM2.19 4a1 1 0 0 0-.996 1.09l.637 7a1 1 0 0 0 .995.91h10.348a1 1 0 0 0 .995-.91l.637-7A1 1 0 0 0 13.81 4H2.19zm4.69-1.707A1 1 0 0 0 6.172 2H2.5a1 1 0 0 0-1 .981l.006.139C1.72 3.042 1.95 3 2.19 3h5.396l-.707-.707z" />
             </svg>
             <a
-              href="https://github.com/Sayo1305/ping_pong_game-pygame-"
+              href="https://github.com/Sayo1305/UserAuthenticatoe"
               target={"_blank"}
               rel="noreferrer"
             >
@@ -200,12 +200,16 @@ const Project = ({projref}) => {
               </span>
             </a>{" "}
           </div>
-          <div className="ProjectCardHead">Ping Pong Game</div>
+          <div className="ProjectCardHead">User Authentication</div>
           <div className="ProjectCardDesc">
-          The game of ping - pong ball with 2 bars, 1 bar is the player while other one is the computer. On each second the speed of ball also increased and language used python with pygame library.
+            IT is simple react app in which I have created a prototype of Authentication Using JWT .
           </div>
           <div className="ProjectStackCont">
-            <div>Python</div>
+            <div>ReactJS</div>
+            <div>NodeJS</div>
+            <div>ExpressJS</div>
+            <div>MONGODB</div>
+            <div>JWT</div>
           </div>
         </div>
         <div className="ProjectCard">
