@@ -74,6 +74,60 @@
   color: #00FF7F !important;
 }
 
+.navbarrepcont{
+  position: absolute;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  overflow: hidden;
+}
+.overlaynavbarrep{
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.43);
+  width: 40%;
+  animation: fadein 1s ease-in-out;
+  animation-iteration-count :initial;
+}
+
+@keyframes fadein {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.navbarrepmenu{
+  background: rgb(5 15 47);
+  z-index: 10;
+  padding: 10px;
+  width: 60%;
+  animation: sidein 1s ease-in-out ;
+  animation-iteration-count :initial;
+}
+
+@keyframes sidein{
+  0%{
+    transform: translateX(70vh);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+
+.navbarrepmenuitems{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  color: rgb(175, 175, 175);
+  flex-direction: column;
+}
+
+
+
 @media screen and (max-width: 750px){
   .NavLinks{
     display: none;

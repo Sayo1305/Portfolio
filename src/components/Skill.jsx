@@ -15,6 +15,7 @@ import redux from "../assets/images/redux.png";
 import vscode from "../assets/images/vscode.png";
 import mongodb from "../assets/images/mongodb.png";
 import postman from "../assets/images/postman.png";
+import tailwind from '../assets/images/tailwind.png';
 const Skill = () => {
   return (
     <div className="SkillContainer">
@@ -51,6 +52,10 @@ const Skill = () => {
           <div className="Skill">
             <img className="skillimg" src={css} alt="css" />
             CSS
+          </div>
+          <div className="Skill">
+            <img className="skillimg" src={tailwind} alt="tailwind" />
+            Tailwind CSS
           </div>
           <div className="Skill">
             <img className="skillimg" src={react} alt="react" />
