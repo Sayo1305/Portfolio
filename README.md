@@ -1,5 +1,7 @@
 # Inspired by 
 <a href = "https://brittanychiang.com/" target = "_blank">brittanychiang.com</a>
+# icons taken from 
+<a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
 ### do checkout their site
 # Getting Started with Create React App
 
