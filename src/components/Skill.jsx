@@ -6,7 +6,7 @@ import java from "../assets/images/java.png";
 import js from "../assets/images/js.png";
 import react from "../assets/images/react.png";
 import node from "../assets/images/nodejs.png";
-import github from "../assets/images/js.png";
+import github from "../assets/images/github.png";
 import css from "../assets/images/css.png";
 import html from "../assets/images/html.png";
 import expressjs from "../assets/images/expressjs.png";
