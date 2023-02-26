@@ -110,24 +110,24 @@
   /* for intersection observer  */
   .project_card1 , .project_card3 {
       opacity: 0;
-      transform: translateX(-2vw);
+      transform: translateY(-10px);
       overflow: hidden;
       transition : transform 1s ease,opacity 1s ease ;
   }
   .project_card1.show , .project_card3.show{
       opacity: 1;
-      transform: translateX(  0);
+      transform: translateY(0);
       transition: transform 1s ease,opacity 1s ease;
   }
   .project_card2 , .project_card4{
       opacity: 0;
-      transform: translateX(2vw);
+      transform: translateY(-10px);
       overflow: hidden;
       transition : transform 1s ease,opacity 1s ease ;
   }
   .project_card2.show , .project_card4.show{
       opacity: 1;
-      transform: translateX(0);
+      transform: translateY(0);
       transition: transform 1s ease,opacity 1s ease;
   }
 

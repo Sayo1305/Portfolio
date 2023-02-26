@@ -1,5 +1,20 @@
 import React from "react";
 import "../assets/css/skill.css";
+import C from "../assets/images/c++.png";
+import python from "../assets/images/python.png";
+import java from "../assets/images/java.png";
+import js from "../assets/images/js.png";
+import react from "../assets/images/react.png";
+import node from "../assets/images/nodejs.png";
+import github from "../assets/images/js.png";
+import css from "../assets/images/css.png";
+import html from "../assets/images/html.png";
+import expressjs from "../assets/images/expressjs.png";
+import next from "../assets/images/next.png";
+import redux from "../assets/images/redux.png";
+import vscode from "../assets/images/vscode.png";
+import mongodb from "../assets/images/mongodb.png";
+import postman from "../assets/images/postman.png";
 const Skill = () => {
   return (
     <div className="SkillContainer">
@@ -11,161 +26,67 @@ const Skill = () => {
         <div className="SkillShowhead">Languages</div>
         <div className="SkillPart">
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
+            <img className="skillimg" src={C} alt="c++" />
             C++
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
+            <img className="skillimg" src={java} alt="java" />
             Java
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
+            <img className="skillimg" src={python} alt="python" />
             Python
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
+            <img className="skillimg" src={js} alt="js" />
             JavaScript(ES6+)
           </div>
         </div>
         <div className="SkillShowhead">Others</div>
         <div className="SkillPart">
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
-            HTML | CSS
+            <img className="skillimg" src={html} alt="html" />
+            HTML
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
-            NodeJS | NextJS
+            <img className="skillimg" src={css} alt="css" />
+            CSS
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
-            ExpressJS | MongoDB
+            <img className="skillimg" src={react} alt="react" />
+            REACTJs
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
-            ReactJS | Redux
+            <img className="skillimg" src={redux} alt="redux" />
+            Redux
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
-            Bootstrap | Material UI
+            <img className="skillimg" src={node} alt="node" />
+            NodeJs
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
-            Git | Github
+            <img className="skillimg" src={next} alt="next" />
+            NextJs
           </div>
           <div className="Skill">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-file-code"
-              viewBox="0 0 16 16"
-            >
-              <path d="M6.646 5.646a.5.5 0 1 1 .708.708L5.707 8l1.647 1.646a.5.5 0 0 1-.708.708l-2-2a.5.5 0 0 1 0-.708l2-2zm2.708 0a.5.5 0 1 0-.708.708L10.293 8 8.646 9.646a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2z" />
-              <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2zm10-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1z" />
-            </svg>
-            Data Structures | Competitive Programming
+            <img className="skillimg" src={expressjs} alt="expressjs" />
+            ExpressJs
+          </div>
+          <div className="Skill">
+            <img className="skillimg" src={mongodb} alt="mongodb" />
+            MongoDB
+          </div>
+          <div className="Skill">
+            <img className="skillimg" src={postman} alt="postman" />
+            Postman
+          </div>
+          <div className="Skill">
+            <img className="skillimg" src={github} alt="github" />
+            Github
+          </div>
+          <div className="Skill">
+            <img className="skillimg" src={vscode} alt="vscode" />
+            VsCode
           </div>
         </div>
       </div>
