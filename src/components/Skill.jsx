@@ -15,6 +15,7 @@ import redux from "../assets/images/redux.png";
 import vscode from "../assets/images/vscode.png";
 import mongodb from "../assets/images/mongodb.png";
 import postman from "../assets/images/postman.png";
+import firebase from "../assets/images/firebase.png";
 import tailwind from '../assets/images/tailwind.png';
 const Skill = () => {
   return (
@@ -80,6 +81,10 @@ const Skill = () => {
           <div className="Skill">
             <img className="skillimg" src={mongodb} alt="mongodb" />
             MongoDB
+          </div>
+          <div className="Skill">
+            <img className="skillimg" src={firebase} alt="firebase" />
+            Firebase
           </div>
           <div className="Skill">
             <img className="skillimg" src={postman} alt="postman" />

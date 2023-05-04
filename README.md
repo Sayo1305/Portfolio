@@ -4,6 +4,9 @@
 <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
 <br>
 icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<a target="_blank" href="https://icons8.com/icon/62452/firebase">Firebase</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+
+
 ### do checkout their site
 # Getting Started with Create React App
 
