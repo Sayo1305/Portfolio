@@ -59,8 +59,15 @@ const Hero = () => {
         />
       </div>
       <div ref={hero4ref} className="HeroPara">
-        I’m a Web developer (MERN Stack) and programmer. Currently, I’m focused
-        on DSA , web3 and Competitive programming.
+        I'm a Web developer (Full Stack) and programmer. Currently, Interning at <a
+                href="https://www.glazegpt.com/"
+                target={"_blank"}
+                rel="noreferrer"
+              >
+                {" "}
+                <span className="NavLinkBullet clickpurple">@GlazeGpt</span>
+              </a>{" "},  
+              {/* I'm focused on DSA , web3 and Competitive programming. */}
       </div>
       <div>
         <a

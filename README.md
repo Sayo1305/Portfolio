@@ -1,6 +1,10 @@
 # Inspired by 
 <a href = "https://brittanychiang.com/" target = "_blank">brittanychiang.com</a>
 # icons taken from 
+
+<a href="https://www.freepik.com/free-vector/coding-concept-illustration_6572420.htm#fromView=search&term=coder&page=1&position=4&track=sph&regularType=vector">Image by storyset</a> on Freepik
+
+
 <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
 <br>
 icon by <a target="_blank" href="https://icons8.com">Icons8</a>

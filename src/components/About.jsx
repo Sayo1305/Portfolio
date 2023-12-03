@@ -1,6 +1,6 @@
 import React from "react";
 import "../assets/css/about.css";
-import profilepic from "../assets/images/Unnat Das.jpg";
+import profilepic from "../assets/images/profile_2.png";
 const About = ({aboutref}) => {
   return (
     <div className="AboutSection">
@@ -14,7 +14,7 @@ const About = ({aboutref}) => {
           My name is Unnat Das, currently pursuing Btech [3rd year] have
           curiosity in Programming, problem-solving, and software development. I
           have good understanding of front-end development and also in{" "}
-          <span className="NavLinkBullet"> MERN </span>
+          <span className="NavLinkBullet"> Full stack </span>
           stack. and have very much fascinated by competitive programming. I
           have solved more than (500+) questions from major platforms like{" "}
           <a
