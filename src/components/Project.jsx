@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../assets/css/project.css";
+import BG from "../assets/images/workzen.png";
 const Project = ({ projref }) => {
   const myproj = useRef();
   const myproj2 = useRef();
@@ -38,19 +39,18 @@ const Project = ({ projref }) => {
         <div className="ProjectImageContainer project_card4" ref={myproj2}>
           <img
             className="ProjectImage"
-            src="https://user-images.githubusercontent.com/84987518/216675846-bf58ae46-7a40-45dc-8039-213f0b97cc45.png"
+            src={BG}
             alt=""
           />
         </div>
         <div className="ProjectDescCont project_card1" ref={myproj}>
-          <div className="ProjectDescHead">CSV file Uploader</div>
+          <div className="ProjectDescHead">WorkZen</div>
           <div className="ProjectDescPara">
-            A MERN stack APP in which we can login and signup using JWT token
-            and add our CSV file and convert it into JSON format and save in the
-            MONGODB data base.
+            A MERN stack APP where user can sign in and assign task and manages task in a organisation.
+            with user management tab,  for access. Graphs and charts to visualization of the task in a team. 
           </div>
           <div className="ProjectStackCont">
-            <div>ReactJs</div>
+            <div>NextJs</div>
             <div>MongoDB</div>
             <div>ExpressJs</div>
             <div>NodeJs</div>
@@ -58,7 +58,7 @@ const Project = ({ projref }) => {
           </div>
           <div className="ProjectStackCont">
             <a
-              href="https://github.com/Sayo1305/Todo_MERN_App"
+              href="https://github.com/Sayo1305/WorkZen"
               target={"_blank"}
               rel="noreferrer"
             >
@@ -71,6 +71,25 @@ const Project = ({ projref }) => {
                 viewBox="0 0 16 16"
               >
                 <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z" />
+              </svg>
+            </a>
+            <a
+              href="https://work-zen.vercel.app/"
+              target={"_blank"}
+              rel="noreferrer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="rgb(175, 175, 175)"
+                class="bi bi-browser-chrome"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M16 8a8.001 8.001 0 0 1-7.022 7.94l1.902-7.098a2.995 2.995 0 0 0 .05-1.492A2.977 2.977 0 0 0 10.237 6h5.511A8 8 0 0 1 16 8ZM0 8a8 8 0 0 0 7.927 8l1.426-5.321a2.978 2.978 0 0 1-.723.255 2.979 2.979 0 0 1-1.743-.147 2.986 2.986 0 0 1-1.043-.7L.633 4.876A7.975 7.975 0 0 0 0 8Zm5.004-.167L1.108 3.936A8.003 8.003 0 0 1 15.418 5H8.066a2.979 2.979 0 0 0-1.252.243 2.987 2.987 0 0 0-1.81 2.59ZM8 10a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z"
+                />
               </svg>
             </a>
           </div>

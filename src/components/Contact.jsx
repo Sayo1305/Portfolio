@@ -1,7 +1,7 @@
 import React, { useState , useRef } from 'react'
 import '../assets/css/contact.css';
 import Swal from 'sweetalert2'
-import emailjs from '@emailjs/browser';
+import { PulseLoader } from 'react-spinners';
 
 
 const Contact = ({contactref}) => {
@@ -37,32 +37,44 @@ const Contact = ({contactref}) => {
       Toast.fire({
         icon: 'error',
         title: "Fill the form Completely",
-      })
+      });
       Setclicked(false);
       return;
     }
-    emailjs.sendForm(process.env.REACT_APP_SERVICEID, process.env.REACT_APP_TEMPLATEID, myform.current, process.env.REACT_APP_PUBLICKEY)
-      .then((result) => {
-          console.log(result.text);
-          Toast.fire({
-            icon: 'success',
-            title: 'Email send successfully'
-          })
-          Setclicked(false);
-      }, (error) => {
-          console.log(error.text);
-          Toast.fire({
-            icon: 'error',
-            title: 'Email not send'
-          })
-          Setclicked(false);
-    }).catch((Errr)=>{
+    try{
+      const res = await fetch('https://nodemailer-portfolio-cyan.vercel.app/send_mail' , {
+        method : "POST",
+        headers : {
+          'content-type': 'application/json',
+        },
+        body : JSON.stringify({
+          "name" : Name,
+          "email" : Email,
+          "subject" : Topic,
+          "message" : Mess,
+          "password" : process.env.REACT_APP_PASSWORD,
+        })
+      });
+      if(res.ok){
+        Toast.fire({
+          icon : "success",
+          title : "Your Message Sent",
+        });
+      }else{
+        Toast.fire({
+          icon : "error",
+          title : "Error in sending email, try with sidebar email",
+        })
+      }
+    }catch(err){
+      console.error(err);
       Toast.fire({
-        icon: 'error',
-        title: Errr,
+        icon : "error",
+        title : "Error in sending email, try with sidebar email",
       })
+    }finally{
       Setclicked(false);
-    })
+    }
   }
   const myform = useRef();
   return (
@@ -86,17 +98,10 @@ const Contact = ({contactref}) => {
                   <label  className='ContactLabel'>Message</label>
                   <textarea className='ContactInput'name="message" value={Mess} placeholder="Your Message" onChange={change_mess}></textarea>
                   </div>
-                  {
-                    (clicked === true ? (
-                      <div>
-                        <button className='ContactSubmit' type="submit" disabled onClick={submit_detail}>Submit</button>
+                  <div style={{"display" : "flex" , "justifyContent" : "center" }}>
+                  <button disabled={clicked} className='ContactSubmit' type="submit"  onClick={submit_detail}>Submit
+                   <PulseLoader color='#000'  loading={clicked} size={10}/></button>
                   </div>
-                    ) : (
-                      <div>
-                        <button className='ContactSubmit' type="submit"  onClick={submit_detail}>Submit</button>
-                  </div>
-                    ))
-                  }
                   
             </div>
       </form>
