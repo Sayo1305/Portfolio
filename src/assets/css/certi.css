@@ -19,6 +19,9 @@
 }
 
 .CertiheadPoint{
+      display: flex;
+      align-items: center;
+      gap: 4px;
       color: rgb(175, 175, 175);
       font-size: 1.2rem;
       font-weight: 600;

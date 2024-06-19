@@ -31,7 +31,7 @@ const Certficate = () => {
               >
                 <span className="NavLinkBullet clickpurple">@leetcode </span>
               </a>
-              | solved over 400+ top 75%
+              | solved over 600+ top 36.5%
             </div>
             <div>
               <a
@@ -41,7 +41,7 @@ const Certficate = () => {
               >
                 <span className="NavLinkBullet clickpurple">@Codeforces </span>
               </a>{" "}
-              | solved over 400+ | Rating 1060 (MAX)
+              | solved over 500+ | Rating 1088 (MAX)
             </div>
             <div>
             <a
