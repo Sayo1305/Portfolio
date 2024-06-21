@@ -39,10 +39,10 @@
 .ProjectDescPara{
       text-align: justify;
       background: #101e35;
-      border: solid 1px #000;
+      border: solid 1px #676767;
       border-radius: 5px;
       padding: 20px;
-      box-shadow: 0 10px 30px -15px #000;
+      /* box-shadow: 0 10px 30px -15px #000; */
 }
 .ProjectImage{
       width: 100%;

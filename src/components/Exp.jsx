@@ -16,8 +16,8 @@ const Exp = ({ expref }) => {
             <span className="NavLinkBullet ">02.</span> Experience
             <div className="StraightLine"></div>
          </div>
-         <div className="Expshowcase border !border-gray-500 my-4 rounded-md md:!p-10 !p-5 bg-[#1a213a]">
-            <div className="w-full flex md:flex-row flex-col gap-4 items-start">
+         <div className="Expshowcase border !border-gray-500 my-4 rounded-md md:!p-10 !p-5 bg-[#171f41]">
+            {/* <div className="w-full flex md:flex-row flex-col gap-4 items-start">
                <img
                   className="w-12 h-12 object-cover rounded-xl"
                   src={bcg_logo}
@@ -57,7 +57,7 @@ const Exp = ({ expref }) => {
                      </div>
                   </div>
                </div>
-            </div>
+            </div> */}
             <div className="w-full flex md:flex-row flex-col gap-4 items-start">
                <img
                   className="w-12 h-12 object-cover rounded-xl"
