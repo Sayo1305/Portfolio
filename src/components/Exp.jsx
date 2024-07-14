@@ -17,47 +17,6 @@ const Exp = ({ expref }) => {
             <div className="StraightLine"></div>
          </div>
          <div className="Expshowcase border !border-gray-500 my-4 rounded-md md:!p-10 !p-5 bg-[#171f41]">
-            {/* <div className="w-full flex md:flex-row flex-col gap-4 items-start">
-               <img
-                  className="w-12 h-12 object-cover rounded-xl"
-                  src={bcg_logo}
-                  alt="icons"
-               />
-               <div>
-                  <div>ReactJs Developer</div>
-                  <div>
-                     {" "}
-                     <a
-                        href="https://www.bcg.com/"
-                        target={"_blank"}
-                        rel="noreferrer"
-                     >
-                        <span className="NavLinkBullet clickpurple">
-                           @Boston Consulting Groups (BCG){" "}
-                        </span>
-                     </a>{" "}
-                  </div>
-                  <div className="ExpDate text-xs font_custom_mons !font-medium">
-                     Aug-22 | Sep-22 | Remote
-                  </div>
-                  <div className="my-3 font-medium !text-sm font_custom_mons">
-                     Developed and designed an FAQ website React JS for a responsive FAQ website for
-                     3L+ teachers in Rajasthan.
-                  </div>
-                  <div className="flex my-3 gap-3 items-start justify-start flex-wrap">
-                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
-                        Reactjs
-                     </div>
-                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
-                        CSS
-                     </div>
-
-                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
-                        Nodejs
-                     </div>
-                  </div>
-               </div>
-            </div> */}
             <div className="w-full flex md:flex-row flex-col gap-4 items-start">
                <img
                   className="w-12 h-12 object-cover rounded-xl"
@@ -182,7 +141,7 @@ const Exp = ({ expref }) => {
                      </a>{" "}
                   </div>
                   <div className="ExpDate text-xs font_custom_mons !font-medium">
-                     Aug-23 | Present | Remote
+                     Aug-23 | Jun-24 | Remote
                   </div>
                   <div className="my-3 font-medium !text-sm font_custom_mons">
                      Engineered high-performing web applications using Next.js for server-side

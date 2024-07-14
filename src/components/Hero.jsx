@@ -59,7 +59,7 @@ const Hero = () => {
         />
       </div>
       <div ref={hero4ref} className="HeroPara">
-        I'm a Web developer (Full Stack) and programmer. Currently, Interning at <a
+        I'm a Web developer (Full Stack) and programmer. Ex-Intern at <a
                 href="https://www.glazegpt.com/"
                 target={"_blank"}
                 rel="noreferrer"
