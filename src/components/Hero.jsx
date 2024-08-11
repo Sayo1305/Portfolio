@@ -59,13 +59,13 @@ const Hero = () => {
         />
       </div>
       <div ref={hero4ref} className="HeroPara">
-        I'm a Web developer (Full Stack) and programmer. Ex-Intern at <a
-                href="https://www.glazegpt.com/"
+        I'm a Web developer (Full Stack) and programmer. Software Engineer at <a
+                href="https://entvin.com/"
                 target={"_blank"}
                 rel="noreferrer"
               >
                 {" "}
-                <span className="NavLinkBullet clickpurple">@GlazeGpt</span>
+                <span className="NavLinkBullet clickpurple">@Entvin (YC S22)</span>
               </a>{" "},  
               {/* I'm focused on DSA , web3 and Competitive programming. */}
       </div>

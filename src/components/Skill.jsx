@@ -9,6 +9,8 @@ import js from "../assets/images/js.png";
 import react from "../assets/images/react.png";
 import node from "../assets/images/nodejs.png";
 import github from "../assets/images/github.png";
+import fastapi from "../assets/images/FastAPI.png";
+import sql from "../assets/images/MySQL.png";
 import css from "../assets/images/css.png";
 import html from "../assets/images/html.png";
 import expressjs from "../assets/images/Expressjs.png";
@@ -197,6 +199,22 @@ const Skill = () => {
                      alt="vscode"
                   />
                   AntDesign
+               </div>
+               <div className="Skill font_custom_mons font-medium">
+                  <img
+                     className="w-28 h-28 bg-[#049789]/50 p-4  rounded-md"
+                     src={fastapi}
+                     alt="fastapo"
+                  />
+                  FAST API
+               </div>
+               <div className="Skill font_custom_mons font-medium">
+                  <img
+                     className="w-28 h-28 bg-[#03608B]/50 p-4  rounded-md"
+                     src={sql}
+                     alt="fastapo"
+                  />
+                  MYSQL
                </div>
                <div className="Skill font_custom_mons font-medium">
                   <img

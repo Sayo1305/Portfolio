@@ -6,6 +6,7 @@ import glazegpt_logo from "../assets/images/glazegpt_logo.jpeg";
 import monhood_logo from "../assets/images/gharbar_logo.jpeg";
 import satyuglabs_logo from "../assets/images/satyugLogo.png";
 import bcg_logo from "../assets/images/boston_consulting_group_logo.jpeg";
+import entvin_logo from "../assets/images/entvin_logo.jpeg";
 const Exp = ({ expref }) => {
    return (
       <div className="ExpContainer">
@@ -176,6 +177,62 @@ const Exp = ({ expref }) => {
                      <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
                         MongoDB
                      </div>
+                  </div>
+               </div>
+            </div>
+            <div className="w-full flex md:flex-row flex-col gap-4 items-start">
+               <img
+                  className="w-12 h-12 object-cover rounded-xl"
+                  src={entvin_logo}
+                  alt="icons"
+               />
+               <div>
+                  <div>Software Engineer</div>
+                  <div>
+                     {" "}
+                     <a
+                        href="https://entvin.com/"
+                        target={"_blank"}
+                        rel="noreferrer"
+                     >
+                        <span className="NavLinkBullet clickpurple">@Entvin (YC S22) </span>
+                     </a>{" "}
+                  </div>
+                  <div className="ExpDate text-xs font_custom_mons !font-medium">
+                     July -24 | Present | Banglore
+                  </div>
+                  <div className="my-3 font-medium !text-sm font_custom_mons">
+                     Engineering high-performing web applications using React.js, Tailwind CSS for
+                     responsive design, Redux for state management and FastAPI for scalable backend services.
+                  </div>
+                  <div className="flex my-3 gap-3 items-start justify-start flex-wrap">
+                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        Reactjs
+                     </div>
+                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        Tailwind CSS
+                     </div>
+                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        Redux Toolkit
+                     </div>
+                     {/* <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        Next Auth
+                     </div> */}
+                     {/* <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        Nodejs
+                     </div> */}
+                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        Python
+                     </div>
+                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        SQL
+                     </div>
+                     <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        FAST API
+                     </div>
+                     {/* <div className="font_custom_mons !font-medium bg-[#21AD67] text-black !border-black text-xs p-1 px-3 rounded-md border">
+                        MongoDB
+                     </div> */}
                   </div>
                </div>
             </div>

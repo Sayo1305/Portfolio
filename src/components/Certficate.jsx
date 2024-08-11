@@ -41,7 +41,7 @@ const Certficate = () => {
               >
                 <span className="NavLinkBullet clickpurple">@Codeforces </span>
               </a>{" "}
-              | solved over 500+ | Rating 1088 (MAX)
+              | solved over 500+ | Rating 1118 (MAX)
             </div>
             <div>
             <a
