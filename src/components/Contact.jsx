@@ -1,113 +1,78 @@
-import React, { useState , useRef } from 'react'
-import '../assets/css/contact.css';
-import Swal from 'sweetalert2'
-import { PulseLoader } from 'react-spinners';
+import { useState, useRef } from "react";
+import Swal from "sweetalert2";
+import { PulseLoader } from "react-spinners";
 
-
-const Contact = ({contactref}) => {
-  const [Name , SetName] = useState("");
-  const [Email , SetEmail] = useState("");
-  const [Topic , SetTopic] = useState("");
-  const [Mess , SetMess] = useState("");
-  const [clicked ,Setclicked] = useState(false);
-  const change_name = (e)=>{
-    SetName(e.target.value);
-  }
-  const change_email = (e)=>{
-    SetEmail(e.target.value);
-  }
-  const change_topic = (e)=>{
-    SetTopic(e.target.value);
-  }
-  const change_mess = (e)=>{
-    SetMess(e.target.value);
-  }
-  const Toast = Swal.mixin({
-    toast: true,
-    position: 'top-end',
-    showConfirmButton: false,
-    timer: 3000,
-    timerProgressBar: true,
-  });
-  const submit_detail = async(e)=>{
-    e.preventDefault();
-    Setclicked(true);
-    if(Name === "" || Email === "" || Topic === "" || Mess === "")
-    {
-      Toast.fire({
-        icon: 'error',
-        title: "Fill the form Completely",
-      });
-      Setclicked(false);
-      return;
-    }
-    try{
-      const res = await fetch('https://nodemailer-portfolio-cyan.vercel.app/send_mail' , {
-        method : "POST",
-        headers : {
-          'content-type': 'application/json',
-        },
-        body : JSON.stringify({
-          "name" : Name,
-          "email" : Email,
-          "subject" : Topic,
-          "message" : Mess,
-          "password" : process.env.REACT_APP_PASSWORD,
-        })
-      });
-      if(res.ok){
-        Toast.fire({
-          icon : "success",
-          title : "Your Message Sent",
-        });
-      }else{
-        Toast.fire({
-          icon : "error",
-          title : "Error in sending email, try with sidebar email",
-        })
-      }
-    }catch(err){
-      console.error(err);
-      Toast.fire({
-        icon : "error",
-        title : "Error in sending email, try with sidebar email",
-      })
-    }finally{
-      Setclicked(false);
-    }
-  }
+const Contact = ({ contactref }) => {
+  const [Name,  setName]  = useState("");
+  const [Email, setEmail] = useState("");
+  const [Topic, setTopic] = useState("");
+  const [Mess,  setMess]  = useState("");
+  const [busy,  setBusy]  = useState(false);
   const myform = useRef();
-  return (
-    <div className='ContactCont'>
-      <div ref={contactref} className='ContactHead'><span className="NavLinkBullet">04.</span>Get In Touch</div>
-      <form ref={myform}>
-            <div className='ContactFormCont'>
-                  <div className='ContactInputDiv'>
-                  <label className='ContactLabel'>Name</label>
-                  <input className='ContactInput' name="user_name" value={Name} placeholder="Your Name" onChange={change_name} type={"text"}></input>
-                  </div>
-                  <div className='ContactInputDiv'>
-                  <label  className='ContactLabel'>Email</label>
-                  <input className='ContactInput'name="user_email" value={Email} placeholder="Your Email ID" onChange={change_email} type={"text"}></input>
-                  </div>
-                  <div className='ContactInputDiv'>
-                  <label  className='ContactLabel'>Topic</label>
-                  <input className='ContactInput'value={Topic}  name="topic" placeholder="Your Subject" onChange={change_topic} type={"text"}></input>
-                  </div>
-                  <div className='ContactInputDiv'>
-                  <label  className='ContactLabel'>Message</label>
-                  <textarea className='ContactInput'name="message" value={Mess} placeholder="Your Message" onChange={change_mess}></textarea>
-                  </div>
-                  <div style={{"display" : "flex" , "justifyContent" : "center" }}>
-                  <button disabled={clicked} className='ContactSubmit' type="submit"  onClick={submit_detail}>Submit
-                   <PulseLoader color='#000'  loading={clicked} size={10}/></button>
-                  </div>
-                  
-            </div>
-      </form>
-      <div className='LastCopy'>Built by <span className='NavLinkBullet'>@Unnat Das</span> </div>
-    </div>
-  )
-}
 
-export default Contact
+  const Toast = Swal.mixin({ toast:true, position:"top-end", showConfirmButton:false, timer:3000, timerProgressBar:true });
+
+  const submit = async (e) => {
+    e.preventDefault();
+    setBusy(true);
+    if (!Name || !Email || !Topic || !Mess) {
+      Toast.fire({ icon:"error", title:"Fill the form completely" });
+      setBusy(false); return;
+    }
+    try {
+      const res = await fetch("https://nodemailer-portfolio-cyan.vercel.app/send_mail", {
+        method:"POST", headers:{"content-type":"application/json"},
+        body: JSON.stringify({ name:Name, email:Email, subject:Topic, message:Mess, password:process.env.REACT_APP_PASSWORD }),
+      });
+      res.ok
+        ? Toast.fire({ icon:"success", title:"Message sent!" })
+        : Toast.fire({ icon:"error",   title:"Error sending email" });
+    } catch {
+      Toast.fire({ icon:"error", title:"Error sending email" });
+    } finally { setBusy(false); }
+  };
+
+  const inputCls = "w-full outline-none rounded-lg bg-transparent border border-[var(--border-color)] text-[var(--text-primary)] text-base px-3 py-2 focus:border-[var(--accent)] transition-colors placeholder:text-[var(--text-secondary)] placeholder:opacity-60";
+  const labelCls = "font-nerko text-[var(--accent)] text-sm mb-1";
+
+  return (
+    <div className="w-[88%] max-w-[1280px] mx-auto mt-[8%] text-center text-[var(--text-secondary)]">
+      <div ref={contactref} className="font-poppins font-bold text-2xl text-[var(--text-primary)] mb-2">
+        <span className="NavLinkBullet">05.</span> Get In Touch
+      </div>
+      <p className="text-[var(--text-secondary)] text-sm mb-8">Have an opportunity or just want to say hi? Drop a message.</p>
+
+      <form ref={myform} onSubmit={submit}
+        className="w-full max-w-lg mx-auto bg-[var(--card-bg)] border border-[var(--border-color)] rounded-2xl p-6 flex flex-col gap-5 shadow-[0_10px_30px_-15px_rgba(0,0,0,0.4)]">
+        <div className="flex flex-col items-start">
+          <label className={labelCls}>Name</label>
+          <input className={inputCls} value={Name} placeholder="Your Name" onChange={e=>setName(e.target.value)} />
+        </div>
+        <div className="flex flex-col items-start">
+          <label className={labelCls}>Email</label>
+          <input className={inputCls} value={Email} placeholder="Your Email" onChange={e=>setEmail(e.target.value)} />
+        </div>
+        <div className="flex flex-col items-start">
+          <label className={labelCls}>Topic</label>
+          <input className={inputCls} value={Topic} placeholder="Subject" onChange={e=>setTopic(e.target.value)} />
+        </div>
+        <div className="flex flex-col items-start">
+          <label className={labelCls}>Message</label>
+          <textarea className={`${inputCls} min-h-[100px] resize-y`} value={Mess} placeholder="Your message..." onChange={e=>setMess(e.target.value)} />
+        </div>
+        <div className="flex justify-center">
+          <button disabled={busy} type="submit"
+            className="flex items-center gap-2 px-8 py-2.5 bg-[var(--accent)] text-[#0a0f2e] font-poppins font-bold rounded-lg cursor-pointer hover:bg-[var(--accent-hover)] transition-all disabled:opacity-60">
+            Submit <PulseLoader color="#0a0f2e" loading={busy} size={8} />
+          </button>
+        </div>
+      </form>
+
+      <div className="font-source text-[0.9rem] text-[var(--text-secondary)] py-3 mt-[6%]">
+        Built by <span className="NavLinkBullet">@Unnat Das</span>
+      </div>
+    </div>
+  );
+};
+
+export default Contact;

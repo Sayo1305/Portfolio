@@ -1,107 +1,56 @@
-import React from "react";
-import "../assets/css/about.css";
 import profilepic from "../assets/images/profile_2.png";
-const About = ({aboutref}) => {
-  return (
-    <div className="AboutSection">
-      <div className="AboutHead" ref={aboutref}>
-        {" "}
-        <span className="NavLinkBullet">01.</span> About Me
-        <div className="StraightLine"></div>
+
+const About = ({ aboutref }) => (
+  <div className="w-[88%] max-w-[1280px] mx-auto py-4 flex flex-col mt-[8%]">
+    {/* Section head */}
+    <div ref={aboutref} className="flex items-center gap-2 text-[var(--text-secondary)] text-2xl font-poppins font-extrabold mb-8">
+      <span className="NavLinkBullet">01.</span> About Me
+      <div className="flex-1 h-px bg-[var(--border-color)] max-w-[50%]" />
+    </div>
+
+    <div className="flex flex-col md:flex-row justify-between items-center gap-8">
+      {/* Text */}
+      <div className="md:w-1/2 flex flex-col gap-4 text-[var(--text-secondary)] text-[1rem] text-justify">
+        <p className="leading-[1.75]">
+          I'm a software engineer with{" "}
+          <span className="NavLinkBullet">2+ years of experience</span> building
+          scalable, production-ready applications in fast-paced startup environments.
+        </p>
+        <p className="leading-[1.75]">
+          I've worked with <span className="NavLinkBullet">3+ startups</span>, focusing on
+          frontend while also handling backend development, system integrations, and cloud
+          deployments on <span className="NavLinkBullet">AWS</span> and{" "}
+          <span className="NavLinkBullet">GCP</span>. I've built efficient APIs, optimized
+          performance, and delivered systems that scale reliably.
+        </p>
+        <p className="leading-[1.75]">
+          Currently I work as a{" "}
+          <span className="NavLinkBullet">full-time software engineer</span>, building
+          end-to-end solutions — from API integration and clean architecture to performance
+          optimization and seamless user experiences. I've also worked as a{" "}
+          <span className="NavLinkBullet">freelance lead frontend developer</span>, delivering
+          complete solutions including integrations, code optimization, reusable structures,
+          and infrastructure setup.
+        </p>
+        <p className="leading-[1.75]">
+          I'm interested in{" "}
+          <span className="NavLinkBullet">system design</span> and building clean, scalable
+          products. I enjoy working across the stack and owning features from idea to
+          production.
+        </p>
+        <p className="leading-[1.75] px-4 py-3 border-l-2 border-[var(--accent)] bg-[var(--badge-bg)] rounded-r-md">
+          Currently seeking{" "}
+          <span className="NavLinkBullet">Full-Stack Engineer / SDE-1</span> roles in both
+          startup and high-scale environments.
+        </p>
       </div>
-      <div className="AboutSubSection">
-        <div className="AboutPara">
-          My name is Unnat Das, currently pursuing Btech [4th year] have
-          curiosity in Programming, problem-solving, and software development. I
-          have good understanding of front-end development and also in{" "}
-          <span className="NavLinkBullet"> Full stack </span>
-          stack. and have very much fascinated by competitive programming. I
-          have solved more than (500+) questions from major platforms like{" "}
-          <a
-                href="https://www.codechef.com/users/sayo_13"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@Codechef </span>
-              </a>{" "},
-          <a
-                href="https://codeforces.com/profile/sayo_13"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@Codeforces </span>
-              </a>{" "}
-          <a
-                href="https://leetcode.com/sayo_13/"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@leetcode </span>
-              </a>, and{" "}
-              <a
-                href="https://www.hackerrank.com/sayo_13?hr_r=1"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@HackerRank </span>
-              </a>{" "}. I had a rating
-          <span className="NavLinkBullet ">
-            {" "}
-            <a
-                href="https://www.codechef.com/users/sayo_13"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@Codechef </span>
-              </a>{" "} max(3){" "}
-            {/* <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="16"
-              height="16"
-              fill="#00FF7F"
-              class="bi bi-star-fill"
-              viewBox="0 0 16 16"
-            >
-              <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
-            </svg>{" "} */}
-          </span>
-          , and <a
-                href="https://codeforces.com/profile/sayo_13"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@Codeforces </span>
-              </a>{" "}.
-          Also Participated in few hackathons (WEB3) like <a
-                href="https://solana.com/"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@solana </span>
-              </a>{" "} ,
-              <a
-                href="https://polygon.technology/"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@polygon </span>
-              </a>{" "}
-               ,
-               <a
-                href="https://www.lumoslabs.co/"
-                target={"_blank"}
-                rel="noreferrer"
-              >
-                <span className="NavLinkBullet clickpurple">@lumos labs </span>
-              </a>{" "}. My goal is to keep trying to improve and be a better
-          version of myself.
-        </div>
-        <div className="ImageContAbout">
-          <img className="AboutImage" src={profilepic} alt="profilepic" />
-        </div>
+
+      {/* Photo */}
+      <div className="w-[280px] h-[40vh] flex-shrink-0 md:w-[360px]">
+        <img src={profilepic} alt="Unnat Das" className="w-full h-full object-cover rounded-xl" />
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default About;

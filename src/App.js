@@ -7,21 +7,30 @@ import Exp from "./components/Exp";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Project from "./components/Project";
-import SideContact from "./components/SideContact";
 import Skill from "./components/Skill";
-import SlideEmail from "./components/SlideEmail";
 
 function App() {
   const [scrollstop, setscrollstop] = useState(false);
+  const [theme, setTheme] = useState("dark");
   const contactref = useRef();
   const expref = useRef();
   const projref = useRef();
   const aboutref = useRef();
+
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
+
+  useEffect(() => {
+    document.documentElement.setAttribute("data-theme", theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
+  };
+
   return (
-    <div className="app">
+    <div className="app" data-theme={theme}>
       <Navbar
         contactref={contactref}
         projref={projref}
@@ -29,11 +38,11 @@ function App() {
         expref={expref}
         setscrollstop={setscrollstop}
         scrollstop={scrollstop}
+        theme={theme}
+        toggleTheme={toggleTheme}
       />
-      <Hero />
+      <Hero projref={projref} theme={theme} />
       <About aboutref={aboutref} />
-      <SideContact />
-      <SlideEmail />
       <Exp expref={expref} />
       <Skill />
       <Certficate />

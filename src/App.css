@@ -1,62 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Kenia&family=Nerko+One&family=Poppins&family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
-*{
-  margin:  0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+
+/* ── Theme Variables ── */
+:root, [data-theme="dark"] {
+  --bg-primary: #050F2F;
+  --bg-secondary: #0d1638;
+  --text-primary: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --accent: #4EECC8;
+  --accent-hover: #2dd4bf;
+  --border-color: rgba(255,255,255,0.08);
+  --navbar-bg: rgba(5,15,47,0.85);
+  --card-bg: rgba(13,22,56,0.6);
+  --code-bg: rgba(8,16,48,0.95);
+  --grid-line: rgba(255,255,255,0.04);
+  --badge-bg: rgba(78,236,200,0.08);
+  --badge-border: rgba(78,236,200,0.25);
+  --shadow-glow: rgba(78,236,200,0.08);
+  --tag-bg: #21AD67;
+  --tag-text: #0a0f2e;
 }
-a{
-  text-decoration: none !important;
-}
-.iDKWcq{
-  background: #00FF7F !important;
-}
-.dBrsQB:is(:hover,:focus,:active) > .sc-gKPRtg{
-  background: #000 !important;
+[data-theme="light"] {
+  --bg-primary: #f0f4f8;
+  --bg-secondary: #e4ebf3;
+  --text-primary: #0f172a;
+  --text-secondary: #1e293b;
+  --accent: #0d9488;
+  --accent-hover: #0f766e;
+  --border-color: rgba(0,0,0,0.1);
+  --navbar-bg: rgba(240,244,248,0.9);
+  --card-bg: rgba(255,255,255,0.85);
+  --code-bg: rgba(203,213,225,0.95);
+  --grid-line: rgba(0,0,0,0.05);
+  --badge-bg: rgba(13,148,136,0.1);
+  --badge-border: rgba(13,148,136,0.3);
+  --shadow-glow: rgba(13,148,136,0.08);
+  --tag-bg: #99f6e4;
+  --tag-text: #134e4a;
 }
 
-::-webkit-scrollbar {
-  width: 10px;
+* { margin:0; padding:0; box-sizing:border-box; scroll-behavior:smooth; }
+a { text-decoration: none !important; }
+body {
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background 0.3s ease, color 0.3s ease;
 }
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: #000;
+/* Scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--text-secondary); border-radius: 20px; }
+::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+
+/* Shared: nav bullet used across many components */
+.NavLinkBullet { font-family:"Source Code Pro",monospace; color:var(--accent); }
+.clickpurple:hover { color:#ff00e1 !important; }
+
+/* Hero JS-toggled animations */
+.hero-left  { opacity:0; transform:translateX(-40px); transition:opacity .8s ease,transform .8s ease; }
+.hero-right { opacity:0; transform:translateX(40px);  transition:opacity .8s ease .2s,transform .8s ease .2s; }
+.hero-left.hero-appear-left   { opacity:1; transform:translateX(0); }
+.hero-right.hero-appear-right { opacity:1; transform:translateX(0); }
+
+/* Hero code syntax colours */
+.ck { color:#c792ea; }
+.cs { color:var(--accent); }
+.cf { color:#82aaff; }
+
+/* Project card JS-toggled animations */
+.proj-card { opacity:0; transform:translateY(-10px); overflow:hidden; transition:opacity 1s ease,transform 1s ease; }
+.proj-card.show { opacity:1; transform:translateY(0); }
+
+/* Exp timeline vertical line (pseudo-element) */
+.exp-timeline { position:relative; }
+.exp-timeline::before {
+  content:"";
+  position:absolute;
+  left:5px; top:8px; bottom:8px;
+  width:1px;
+  background:linear-gradient(to bottom, var(--accent), rgba(78,236,200,0.1));
 }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: rgb(179, 178, 178);
-  border-radius: 20px;
-}
-
-::-webkit-scrollbar-thumb:hover{
-  background: #00FF7F
-}
-
-
-.app{
-  width: 100%;
-  height: auto;
-  background: rgb(5 15 47);
-  /* background-color: #1e2c42; */
-}
-
-.NavLinkBullet {
-  font-family: "Source Code Pro", monospace;
-  color: #00FF7F;
-}
-.NavLinkBullet.clickpurple:hover , .tilttext.clickpurple:hover{
-  color: #ff00e1;
-}
-.StraightLine{
-  width: 50%;
-  height: 1px;
-  background: rgb(179, 178, 178);
-}
-.HorizontalLine{
-  width: 1px;
-  height: 160px;
-  background: rgb(179, 178, 178);
+/* Exp timeline dot glow ring uses bg-primary via box-shadow */
+.exp-dot {
+  width:11px; height:11px; border-radius:50%;
+  background:var(--accent);
+  box-shadow:0 0 0 3px var(--bg-primary), 0 0 0 4px rgba(78,236,200,0.3);
+  position:absolute; left:-27px; top:10px; flex-shrink:0;
 }
