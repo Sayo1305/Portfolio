@@ -12,7 +12,7 @@ import imgAntd     from "../assets/images/antd.png";
 import imgHtml     from "../assets/images/html.png";
 import imgCss      from "../assets/images/css.png";
 import imgNode     from "../assets/images/nodejs.png";
-import imgExpress  from "../assets/images/Expressjs.png";
+import imgExpress  from "../assets/images/expressjs.png";
 import imgFastapi  from "../assets/images/FastAPI.png";
 import imgMongo    from "../assets/images/mongodb.png";
 import imgFirebase from "../assets/images/firebase.png";
