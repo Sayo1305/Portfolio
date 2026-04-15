@@ -197,30 +197,6 @@ const Project = ({ projref }) => {
           />
         </div>
       </div>
-
-      <div className="text-center font-bold text-[var(--text-primary)] text-xl mt-12 mb-5 font-poppins">More Projects</div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-5">
-        <MiniCard cardRef={r.p7} link="https://github.com/Sayo1305/shop.co"
-          title="Shop.co - Extended"
-          desc="Further iterations around UX polishing, listing detail flows, and scalable product UI decisions."
-          tags={["Next.js","Express.js","Supabase"]}
-        />
-        <MiniCard cardRef={r.p8} link="https://github.com/Sayo1305/UserAuthenticatoe"
-          title="User Authentication"
-          desc="React app demonstrating user authentication with JWT. Backend built with Node.js + Express, MongoDB as database."
-          tags={["React.js","Node.js","Express.js","MongoDB","JWT"]}
-        />
-        <MiniCard cardRef={r.p9} link="https://github.com/Sayo1305/newsapp"
-          title="News App"
-          desc="News website with top trending news, search, and pagination via API calling through a backend proxy."
-          tags={["React.js","Express.js","Node.js","API"]}
-        />
-        <MiniCard cardRef={r.p10} link="https://github.com/Sayo1305/Movie_search_engine"
-          title="Movie Search App"
-          desc="Simple movie search application connected with an external API, delivering desired search results instantly."
-          tags={["React.js","CSS","API"]}
-        />
-      </div>
     </div>
   );
 };

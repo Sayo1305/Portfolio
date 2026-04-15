@@ -21,6 +21,8 @@ const Hero = ({ projref }) => {
       <div className="absolute inset-0 pointer-events-none z-0" style={{
         backgroundImage: "linear-gradient(var(--grid-line) 1px,transparent 1px),linear-gradient(90deg,var(--grid-line) 1px,transparent 1px)",
         backgroundSize: "64px 64px",
+        WebkitMaskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
+        maskImage: "radial-gradient(ellipse 80% 80% at 50% 50%, black 40%, transparent 100%)",
       }} />
 
       <div className="relative z-0 flex items-center justify-between gap-8 w-[88%] max-w-[1280px] mx-auto min-h-screen pt-28 pb-16">
